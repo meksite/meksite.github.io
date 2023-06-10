@@ -18,7 +18,7 @@ function generatePDF() {
    // Add a title to the PDF
     doc.setFontSize(50);
     doc.setFontStyle('bold');
-    doc.text("MASJID-E-KHASIMIAH", 10, 10);
+    doc.text("MASJID-E-KHASIMIAH", 10, 20);
 
     // Get form data
     var name = document.getElementById('name').value;
