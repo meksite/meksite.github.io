@@ -1,8 +1,8 @@
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(196, 231, 214);
   margin: 30px;
+  background-size: cover;
 }
 
 .container {
@@ -14,26 +14,43 @@ body {
 }
 
 h1 {
-  font-family: 'Alkalami';font-size: 80px; color: darkgreen;
+  font-family: TR;
+  font-size: 70px;
+  color: darkgreen;
   text-align: center;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
-h2{
+
+h2 {
   text-align: center;
-  font-family: cursive; font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+  color: brown;
+  margin: 0;
+  padding: 0;
 }
+
+h3 {
+  text-align: center;
+  font-family: 'cursive';
+  font-size: 30px;
+}
+
 h6 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 17px; color: rgb(15, 15, 15);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
   text-align: center;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
+
 h4 {
-  font-family: cursive; font-size: 20px;
+  font-family: 'cursive';
+  font-size: 20px;
   text-align: left;
-  margin:10;
-  padding:0;
+  margin: 10px;
+  padding: 0;
 }
 
 form {
@@ -43,7 +60,9 @@ form {
 label {
   display: block;
   margin-bottom: 5px;
-  font-weight: bold; font-family: cursive; font-size: large;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: large;
 }
 
 input[type="text"],
