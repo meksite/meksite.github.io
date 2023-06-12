@@ -81,5 +81,5 @@ function generatePDF() {
    doc.text(mobile, tableX + cellWidth, tableY + cellHeight * 10);
 
     // Save PDF
-    doc.save('Masjid_Collection.pdf');
+    doc.save('Masjid_Collection_' + date + '.pdf');
   }
