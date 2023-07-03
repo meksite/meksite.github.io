@@ -65,7 +65,7 @@ body, ul, li {
     margin-bottom: 2px;
     text-align-last: center;
     font-weight: bold;
-    font-family: cursive;
+    font-family: "Akaya Kanadaka";
     font-size:x-large;
   }
   
@@ -113,7 +113,7 @@ body, ul, li {
   
   /* Navigation Bar */
   nav {
-    padding: auto;
+    margin: 0;
   }
   
   nav ul {
