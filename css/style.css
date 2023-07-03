@@ -1,7 +1,7 @@
 /* Reset default styles */
 body, ul, li {
-   margin: 20px;
-   padding: 0;
+   margin: auto;
+   padding: auto;
   }
 
   .container {
