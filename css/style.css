@@ -1,6 +1,9 @@
 body {
 	margin: 0;
 	padding: 0;
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
@@ -154,7 +157,7 @@ nav ul li a:hover {
 	padding: 100px;
 	text-align: center;
 	display: flex;
-	background-color: rgba(195, 223165, 0.568);
+	background-color: rgba(44, 224, 20, 0.404);
 }
 
 #about {
@@ -168,6 +171,7 @@ footer {
 	text-align: center;
 	font-family: cursive;
 	padding: 2px;
+	margin-top: auto;
 }
 
 .button {
