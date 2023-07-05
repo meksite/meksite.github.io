@@ -286,7 +286,7 @@ button {
 	}
   
 	.banner {
-	  padding: 50px;
+	  padding: 100px;
 	}
   
 	#about {
@@ -321,6 +321,6 @@ button {
 	}
   
 	nav ul li:hover > ul {
-	  display: none;
+	  display: block;
 	}
   }
