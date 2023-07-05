@@ -224,103 +224,103 @@ button {
 /* Media Queries */
 @media (max-width: 768px) {
 	/* Adjust styles for mobile devices */
-
+  
 	.container {
-		max-width: 100%;
-		padding: 5px;
+	  max-width: 100%;
+	  padding: 5px;
 	}
-
+  
 	form {
-		margin-left: 10px;
-		margin-right: 10px;
+	  margin-left: 10px;
+	  margin-right: 10px;
 	}
-
+  
 	nav ul {
-		justify-content: center;
+	  justify-content: center;
 	}
-
+  
 	nav ul li {
-		display: block;
-		margin-bottom: 10px;
+	  display: block;
+	  margin-bottom: 10px;
 	}
-
+  
 	label {
-		text-align: left;
+	  text-align: left;
 	}
-
+  
 	input[type="text"],
 	input[type="date"],
 	input[type="tel"],
 	input[type="number"],
 	select,
 	textarea {
-		text-align: left;
+	  text-align: left;
 	}
-
+  
 	table {
-		font-size: 14px;
+	  font-size: 14px;
 	}
-
+  
 	h1 {
-		font-size: 50px;
+	  font-size: 50px;
 	}
-
+  
 	h2 {
-		font-size: 30px;
+	  font-size: 30px;
 	}
-
+  
 	h3 {
-		font-size: 22px;
+	  font-size: 22px;
 	}
-
+  
 	h4 {
-		font-size: 18px;
+	  font-size: 18px;
 	}
-
+  
 	h5 {
-		font-size: 12px;
+	  font-size: 12px;
 	}
-
+  
 	p {
-		font-size: 16px;
+	  font-size: 16px;
 	}
-
+  
 	.banner {
-		padding: 50px;
+	  padding: 50px;
 	}
-
+  
 	#about {
-		padding: 20px;
+	  padding: 20px;
 	}
-
+  
 	nav {
-		padding: 0;
-		text-align: center;
+	  padding: 0;
+	  text-align: center;
 	}
-
+  
 	nav ul {
-		display: block;
-		margin: 0;
-		padding: 0;
+	  display: block;
+	  margin: 0;
+	  padding: 0;
 	}
-
+  
 	nav ul li {
-		display: block;
-		margin-bottom: 10px;
+	  display: block;
+	  margin-bottom: 10px;
 	}
-
+  
 	nav ul li a {
-		display: block;
-		text-align: center;
-		font-size: 20px;
+	  display: block;
+	  text-align: center;
+	  font-size: 20px;
 	}
-
+  
 	nav ul li ul {
-		position: static;
-		background-color: transparent;
+	  position: static;
+	  background-color: transparent;
 	}
-
+  
 	nav ul li:hover > ul {
-		display: none;
+	  display: none;
 	}
-}
+  }
