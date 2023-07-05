@@ -262,7 +262,7 @@ button {
 	}
   
 	h1 {
-	  font-size: 50px;
+	  font-size: 40px;
 	}
   
 	h2 {
@@ -286,7 +286,26 @@ button {
 	}
   
 	.banner {
-	  padding: 10px;
+	  padding: 20px;
+	  margin: 0;
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	  display: flex;
+	}
+
+	.banner h1 {
+		font-size: 35px;
+	}
+
+	.banner h3 {
+		font-size: 15px;
+		text-align: justify;
+	}
+	
+	.banner p {
+		font-size: 15px;
+		margin: 5px;
 	}
   
 	#about {
