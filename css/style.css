@@ -182,7 +182,7 @@
   }
   
   .banner {
-	padding: 100px;
+	padding: 10px;
 	text-align: center;
 	display: flex;
 	background-color: rgba(195, 223, 165, 0.568);
@@ -286,7 +286,7 @@ button {
 	}
   
 	.banner {
-	  padding: 100px;
+	  padding: 10px;
 	}
   
 	#about {
