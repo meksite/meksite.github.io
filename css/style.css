@@ -320,7 +320,7 @@ button {
 	  background-color: transparent;
 	}
   
-	nav ul li:hover > ul {
+	nav ul li:focus > ul {
 	  display: block;
 	}
   }
