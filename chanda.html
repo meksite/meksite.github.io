@@ -7,6 +7,7 @@
   <link href='https://fonts.googleapis.com/css?family=Akaya Kanadaka' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/login.js"></script>
   <style>
     body{
       background-image: url(images/bgimage.jpg);
@@ -23,6 +24,24 @@
 </head>
 <body>
   <div id="signinPage">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="salah.html">Salah Timings</a></li>
+        <li><a href="teachings.html">Teachings</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li class="dropdown"><a>Forms</a>
+          <ul>
+            <li><a href="chanda.html">Chanda Form</a></li>
+            <li><a href="audit.html">Audit Form</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+    </nav>
     <h1>MASJID-E-KHASIMIAH</h1>
     <h3>Please Sign In</h3>
     <form id="loginForm">
@@ -64,7 +83,7 @@
       <input type="date" id="date" name="date" required><br><br>
 
       <label for="type">Type:</label>
-      <select id="type" name="type" onchange="handleTypeChange()" required>
+      <select id="type" name="type"="type" onchange="handleTypeChange()" required>
         <option value="">Select Type</option>
         <option value="MEK Jumma Collection">MEK Jumma Collection</option>
         <option value="External Jumma Collection">External Jumma Collection</option>
@@ -142,7 +161,7 @@
 
       // Check against predefined credentials
       if (username === predefinedUsername && password === predefinedPassword) {
-        document.getElementById("signinMessage").textContent = "Sign in successful!";
+        document.getElementById("signinMessage").textContent = "Sign Out successful! Please close the window.";
         showWebForm();
         signedIn = true;
       } else {
@@ -178,6 +197,10 @@
       signedIn = false;
       document.getElementById("webFormPage").style.display = "none";
       document.getElementById("signinPage").style.display = "block";
+
+      // Clear entered credentials
+      document.getElementById("username").value = "";
+      document.getElementById("password").value = "";
     }
   </script>
 </body>

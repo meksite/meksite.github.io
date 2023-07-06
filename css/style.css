@@ -230,6 +230,27 @@ cursor: pointer;
   padding: 5px;
 }
 
+/* Web form alignment */
+#myForm {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
+/* Input fields alignment */
+  #myForm label,
+  #myForm input,
+  #myForm textarea,
+  #myForm select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Button alignment */
+  #myForm button {
+    margin-top: 10px;
+}
+
 form {
   margin-left: 10px;
   margin-right: 10px;
