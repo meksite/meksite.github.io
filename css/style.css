@@ -1,309 +1,305 @@
 /* Common Styles */
 body {
-	margin: 0;
-	padding: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 90px;
+  color: rgb(4, 51, 4);
+  text-align: center;
+  margin: 10px;
+}
+
+h2 {
+  font-size: 45px;
+  font-family: 'Holtwood One SC';
+}
+
+h3 {
+  font-size: 28px;
+  text-align: center;
+  font-family: "Akaya Kanadaka";
+}
+
+h4 {
+  font-size: 22px;
+  color: brown;
+  text-align: center;
+  font-family: 'Kalam';
+  margin: 5px;
+}
+
+h5 {
+  font-size: 15px;
+  color: whitesmoke;
+  margin: 5px;
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+  font-family: "Akaya Kanadaka";
+  color: rgb(5, 5, 5);
+}
+
+form {
+  max-width: 3000px;
+  margin-left: 200px;
+  margin-right: 200px;
+  align-self: center;
+  font-family: "Akaya Kanadaka";
+}
+
+label {
+  display: block;
+  margin-bottom: 2px;
+  text-align-last: center;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: x-large;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #0f0f0f;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Akaya Kanadaka";
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-family: "Akaya Kanadaka";
+  font-size: x-large;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-family: "Akaya Kanadaka";
+  font-size: x-large;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+nav {
+  padding: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline-flex;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  font-family: 'Holtwood One SC';
+  font-size: 25px;
+}
+
+.banner {
+  padding: 100px;
+  text-align: center;
+  display: inline-flex;
+  background-color: rgba(195, 223, 165, 0.568);
+}
+
+#about {
+  padding: 50px;
+  font-family: "Akaya Kanadaka";
+}
+
+footer {
+  background-color: #0f0b0bc5;
+  color: rgb(236, 233, 233);
+  text-align: center;
+  font-family: cursive;
+padding: 2px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #333;
+  font-family: cursive;
+  color: rgba(120, 207, 32, 0.836);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: whitesmoke;
+  left: 0;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Adjust styles for mobile devices */
+
   .container {
-	max-width: 100px;
-	margin: 0 auto;
-	padding: 10px;
-	background-color: rgba(255, 255, 255, 0.8);
-	border-radius: 5px;
+    max-width: 100%;
+    padding: 5px;
   }
-  
-  h1 {
-	font-size: 90px;
-	color: rgb(4, 51, 4);
-	text-align: center;
-	margin: 10px;
-  }
-  
-  h2 {
-	font-size: 45px;
-	font-family: 'Holtwood One SC';
-  }
-  
-  h3 {
-	font-size: 28px;
-	text-align: center;
-	font-family: "Akaya Kanadaka";
-  }
-  
-  h4 {
-	font-size: 22px;
-	color: brown;
-	text-align: center;
-	font-family: 'Kalam';
-	margin: 5px;
-  }
-  
-  h5 {
-	font-size: 15px;
-	color: whitesmoke;
-	margin: 5px;
-  }
-  
-  p {
-	font-size: 20px;
-	text-align: justify;
-	font-family: "Akaya Kanadaka";
-	color: rgb(5, 5, 5);
-  }
-  
+
   form {
-	max-width: 3000px;
-	margin-left: 200px;
-	margin-right: 200px;
-	align-self: center;
-	font-family: "Akaya Kanadaka";
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  
+
+  nav ul {
+    justify-content: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
   label {
-	display: block;
-	margin-bottom: 2px;
-	text-align-last: center;
-	font-weight: bold;
-	font-family: cursive;
-	font-size: x-large;
+    text-align: left;
   }
-  
+
   input[type="text"],
   input[type="date"],
   input[type="tel"],
   input[type="number"],
   select,
   textarea {
-	text-align: center;
-	margin: auto;
-	width: 100%;
-	padding: 5px;
-	border-radius: 5px;
-	border: 1px solid #0f0f0f;
+    text-align: left;
   }
-  
+
   table {
-	width: 100%;
-	border-collapse: collapse;
-	font-family: "Akaya Kanadaka";
+    font-size: 14px;
   }
-  
-  th,
-  td {
-	padding: 10px;
-	text-align: left;
-	border: 1px solid #ddd;
-	font-family: "Akaya Kanadaka";
-	font-size: x-large;
+
+  h1 {
+    font-size: 40px;
   }
-  
-  th {
-	background-color: #f5f5f5;
-	font-family: "Akaya Kanadaka";
-	font-size: x-large;
+
+  h2 {
+    font-size: 30px;
   }
-  
-  tr:nth-child(even) {
-	background-color: #f9f9f9;
+
+  h3 {
+    font-size: 22px;
   }
-  
-  tr:hover {
-	background-color: #f0f0f0;
+
+  h4 {
+    font-size: 18px;
   }
-  
-  nav {
-	padding: auto;
+
+  h5 {
+    font-size: 12px;
   }
-  
-  nav ul {
-	list-style-type: none;
-	display: inline-flex;
-	justify-content: space-around;
+
+  p {
+    font-size: 16px;
   }
-  
-  nav ul li {
-	display: inline-flex;
-  }
-  
-  nav ul li a {
-	color: rgb(0, 0, 0);
-	font-family: 'Holtwood One SC';
-	font-size: 25px;
-  }
-  
+
   .banner {
-	padding: 100px;
-	text-align: center;
-	display: inline-flex;
-	background-color: rgba(195, 223, 165, 0.568);
+    padding: 50px;
   }
-  
+
   #about {
-	padding: 50px;
-	font-family: "Akaya Kanadaka";
+    padding: 20px;
   }
-  
-  footer {
-	background-color: #0f0b0bc5;
-	color: rgb(236, 233, 233);
-	text-align: center;
-	font-family: cursive;
-  padding: 2px;
+
+  nav {
+    padding: 0;
+    text-align: center;
   }
-  
-  .button {
-	display: inline-block;
-	background-color: #333;
-	font-family: cursive;
-	color: rgba(120, 207, 32, 0.836);
-	padding: 10px 20px;
-	text-decoration: none;
-	border-radius: 5px;
-  }
-  
-  button {
-	padding: 10px 20px;
-	background-color: #4CAF50;
-	align-items: center;
-	justify-content: center;
-	color: white;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-  }
-  
+
   nav ul {
-	list-style-position: inside;
-	margin: 0;
-	padding: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
   }
-  
+
   nav ul li {
-	display: inline-block;
-	position: relative;
+    display: fl;
+    margin-bottom: 10px;
   }
-  
+
   nav ul li a {
-	display: block;
-	text-decoration: none;
+    display: inline-flex;
+    text-align: center;
+    font-size: 20px;
   }
-  
+
   nav ul li ul {
-	display: none;
-	position: absolute;
-	top: 100%;
-	background-color: whitesmoke;
-	left: 0;
+    position: relative;
+    background-color: transparent;
   }
-  
-  nav ul li:hover > ul {
-	display: block;
+
+  nav ul li:focus-visible > ul {
+    display: inline-flexbox;
   }
-  
-  /* Media Queries */
-  @media (max-width: 768px) {
-	/* Adjust styles for mobile devices */
-  
-	.container {
-	  max-width: 100%;
-	  padding: 5px;
-	}
-  
-	form {
-	  margin-left: 10px;
-	  margin-right: 10px;
-	}
-  
-	nav ul {
-	  justify-content: left;
-	}
-  
-	nav ul li {
-	  display: inline-block;
-	  margin-bottom: 10px;
-	}
-  
-	label {
-	  text-align: left;
-	}
-  
-	input[type="text"],
-	input[type="date"],
-	input[type="tel"],
-	input[type="number"],
-	select,
-	textarea {
-	  text-align: left;
-	}
-  
-	table {
-	  font-size: 14px;
-	}
-  
-	h1 {
-	  font-size: 40px;
-	}
-  
-	h2 {
-	  font-size: 30px;
-	}
-  
-	h3 {
-	  font-size: 22px;
-	}
-  
-	h4 {
-	  font-size: 18px;
-	}
-  
-	h5 {
-	  font-size: 12px;
-	}
-  
-	p {
-	  font-size: 16px;
-	}
-  
-	.banner {
-	  padding: 50px;
-	}
-  
-	#about {
-	  padding: 20px;
-	}
-  
-	nav {
-	  padding: 20px;
-	  text-align: justify;
-	  text-align-last: auto;
-	}
-  
-	nav ul {
-	  display: block;
-	  margin: 10px;
-	  padding: 0;
-	}
-  
-	nav ul li {
-	  display: inline-block;
-	  margin-bottom: 10px;
-	}
-  
-	nav ul li a {
-	  display: inline-block;
-	  position: relative;
-	  text-align: justify;
-	  text-align-last: auto;
-	  font-size: 22px;
-	}
-  
-	nav ul li ul {
-	  position:relative;
-	  background-color: transparent;
-	  text-align-last: auto;
-	}
-  
-	nav ul li:focus > ul {
-	  display: block;
-	}
-  }  
+}
