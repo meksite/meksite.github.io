@@ -240,7 +240,7 @@ button {
 	}
   
 	nav ul li {
-	  display: block;
+	  display: inline;
 	}
   
 	label {
@@ -312,7 +312,7 @@ button {
 	}
   
 	nav {
-	  text-align: left-right;
+	  text-align: justify;
 	}
   
 	nav ul {
@@ -324,12 +324,13 @@ button {
 	nav ul li {
 	  display: inline;
 	  margin-bottom: 0;
+	  text-align: justify;
 	}
   
 	nav ul li a {
 	  display: inline-block;
-	  text-align: left;
-	  font-size: 8px;
+	  text-align: justify;
+	  font-size: 15px;
 	}
   
 	nav ul li ul {
