@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -23,88 +22,163 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.debug.js"></script>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="salah.html">Salah Timings</a></li>
-      <li><a href="teachings.html">Teachings</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li class="dropdown"><a>Forms</a>
-        <ul>
-          <li><a href="chanda.html">Chanda Form</a></li>
-          <li><a href="audit.html">Audit Form</a></li>
-        </ul>
-      </li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="donate.html">Donate</a></li>
-    </ul>
-  </nav>
-  <h1>Masjid-e-Khasimiah Chanda Form</h1>
+  <div id="signinPage">
+    <h1>MASJID-E-KHASIMIAH</h1>
+    <h3>Please Sign In</h3>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Sign In</button>
+    </form>
+    <p id="signinMessage"></p>
+  </div>
 
-  <form id="myForm">
-    <label for="name">Receipt No:</label>
-    <input type="text" id="name" name="name" autocomplete="off"><br><br>
+  <div id="webFormPage" style="display: none;">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="salah.html">Salah Timings</a></li>
+        <li><a href="teachings.html">Teachings</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li class="dropdown"><a>Forms</a>
+          <ul>
+            <li><a href="chanda.html">Chanda Form</a></li>
+            <li><a href="audit.html">Audit Form</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+    </nav>
+    <h1>Masjid-e-Khasimiah Chanda Form</h1>
 
-    <label for="date">Date:</label>
-    <input type="date" id="date" name="date" required><br><br>
+    <form id="myForm">
+      <label for="name">Receipt No:</label>
+      <input type="text" id="name" name="name" autocomplete="off"><br><br>
 
-    <label for="type">Type:</label>
-    <select id="type" name="type" onchange="handleTypeChange()" required>
-      <option value="">Select Type</option>
-      <option value="MEK Jumma Collection">MEK Jumma Collection</option>
-      <option value="External Jumma Collection">External Jumma Collection</option>
-    </select><br><br>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
 
-    <div id="additionalField" style="display: none;">
-      <label for="additional">Ext Masjid Name:</label>
-      <input type="text" id="additional" name="additional"><br><br>
-    </div>
+      <label for="type">Type:</label>
+      <select id="type" name="type" onchange="handleTypeChange()" required>
+        <option value="">Select Type</option>
+        <option value="MEK Jumma Collection">MEK Jumma Collection</option>
+        <option value="External Jumma Collection">External Jumma Collection</option>
+      </select><br><br>
 
-    <label for="location">Location:</label>
-    <input type="text" id="location" name="location" required><br><br>
+      <div id="additionalField" style="display: none;">
+        <label for="additional">Ext Masjid Name:</label>
+        <input type="text" id="additional" name="additional"><br><br>
+      </div>
 
-    <label for="mobile">Mobile Number:</label>
-    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
-     
-    <h4>Denominations</h4>
-    <label for="denomination_500">₹500 x:</label>
-    <input type="number" id="denomination_500" min="0" value="0" oninput="calculateSum()"><br><br>
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required><br><br>
 
-    <label for="denomination_200">₹200 x:</label>
-    <input type="number" id="denomination_200" min="0" value="0" oninput="calculateSum()"><br><br>
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+       
+      <h4>Denominations</h4>
+      <label for="denomination_500">₹500 x:</label>
+      <input type="number" id="denomination_500" min="0" value="0" oninput="calculateSum()"><br><br>
 
-    <label for="denomination_100">₹100 x:</label>
-    <input type="number" id="denomination_100" min="0" value="0" oninput="calculateSum()"><br><br>
+      <label for="denomination_200">₹200 x:</label>
+      <input type="number" id="denomination_200" min="0" value="0" oninput="calculateSum()"><br><br>
 
-    <label for="denomination_50">₹50 x:</label>
-    <input type="number" id="denomination_50" min="0" value="0" oninput="calculateSum()"><br><br>
+      <label for="denomination_100">₹100 x:</label>
+      <input type="number" id="denomination_100" min="0" value="0" oninput="calculateSum()"><br><br>
 
-    <label for="denomination_20">₹20 x:</label>
-    <input type="number" id="denomination_20" min="0" value="0" oninput="calculateSum()"><br><br>
+      <label for="denomination_50">₹50 x:</label>
+      <input type="number" id="denomination_50" min="0" value="0" oninput="calculateSum()"><br><br>
 
-    <label for="denomination_10">₹10 x:</label>
-    <input type="number" id="denomination_10" min="0" value="0" oninput="calculateSum()"><br><br>
+      <label for="denomination_20">₹20 x:</label>
+      <input type="number" id="denomination_20" min="0" value="0" oninput="calculateSum()"><br><br>
 
-    <label for="sum">Total amount in cash:</label>
-    <input type="text" id="sum" readonly><br><br>
+      <label for="denomination_10">₹10 x:</label>
+      <input type="number" id="denomination_10" min="0" value="0" oninput="calculateSum()"><br><br>
 
-    <label for="additionalNumber">Total amount in UPI:</label>
-    <input type="number" id="additionalNumber" min="0" value="0" oninput="calculateSum()"><br><br>
+      <label for="sum">Total amount in cash:</label>
+      <input type="text" id="sum" readonly><br><br>
 
-    <label for="totalSum">Total Sum:</label>
-    <input type="text" id="totalSum" readonly><br><br>
+      <label for="additionalNumber">Total amount in UPI:</label>
+      <input type="number" id="additionalNumber" min="0" value="0" oninput="calculateSum()"><br><br>
 
-    <label for="message">Comments:</label><br>
-    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+      <label for="totalSum">Total Sum:</label>
+      <input type="text" id="totalSum" readonly><br><br>
 
-    <button type="button" onclick="generatePDF()">Generate PDF</button>
+      <label for="message">Comments:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
 
-  </form><br>
+      <button type="button" onclick="generatePDF()">Generate PDF</button>
+      <button type="button" onclick="signOut()">Sign Out</button>
+    </form><br>
+
     <!-- Footer -->
     <footer>
       <h5>&copy; 2023 Masjid-E-Khasimiah, All rights reserved.</h5>
     </footer>
+  </div>
+
+  <script>
+    var signedIn = false;
+    var predefinedUsername = "mek";
+    var predefinedPassword = "mekpass";
+
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get input values
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Perform basic validation
+      if (username.trim() === "" || password.trim() === "") {
+        document.getElementById("signinMessage").textContent = "Please enter both username and password.";
+        return;
+      }
+
+      // Check against predefined credentials
+      if (username === predefinedUsername && password === predefinedPassword) {
+        document.getElementById("signinMessage").textContent = "Sign in successful!";
+        showWebForm();
+        signedIn = true;
+      } else {
+        document.getElementById("signinMessage").textContent = "Invalid username or password.";
+      }
+    });
+
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Check if user is signed in
+      if (!signedIn) {
+        alert("Please sign in before submitting the form.");
+        return;
+      }
+
+      // Get form data
+      var formData = new FormData(this);
+
+      // Perform form validation and processing as needed
+      // ...
+
+      // Display success message
+      document.getElementById("webFormMessage").textContent = "Form submitted successfully!";
+    });
+
+    function showWebForm() {
+      document.getElementById("signinPage").style.display = "none";
+      document.getElementById("webFormPage").style.display = "block";
+    }
+
+    function signOut() {
+      signedIn = false;
+      document.getElementById("webFormPage").style.display = "none";
+      document.getElementById("signinPage").style.display = "block";
+    }
+  </script>
 </body>
 </html>
