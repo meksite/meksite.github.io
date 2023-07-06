@@ -1,10 +1,8 @@
-  body {
-    margin: 20px;
+/* Common Styles */
+body {
+	margin: 0;
 	padding: 0;
-	display: flex;
-	flex-direction: column;
-	min-height: 250vh;
-}
+  }
   
   .container {
 	max-width: 100px;
@@ -47,23 +45,24 @@
   }
   
   p {
-	font-size: 25px;
+	font-size: 20px;
 	text-align: justify;
 	font-family: "Akaya Kanadaka";
 	color: rgb(5, 5, 5);
   }
   
   form {
-	max-width: 100%;
+	max-width: 3000px;
 	margin-left: 200px;
 	margin-right: 200px;
+	align-self: center;
 	font-family: "Akaya Kanadaka";
   }
   
   label {
 	display: block;
 	margin-bottom: 2px;
-	text-align: center;
+	text-align-last: center;
 	font-weight: bold;
 	font-family: cursive;
 	font-size: x-large;
@@ -81,16 +80,6 @@
 	padding: 5px;
 	border-radius: 5px;
 	border: 1px solid #0f0f0f;
-	transition: border-color 0.3s ease;
-  }
-  
-  input[type="text"]:hover,
-  input[type="date"]:hover,
-  input[type="tel"]:hover,
-  input[type="number"]:hover,
-  select:hover,
-  textarea:hover {
-	border-color: #333;
   }
   
   table {
@@ -123,68 +112,29 @@
   }
   
   nav {
-	padding: 10px;
-	text-align:justify;
-	font-size: medium;
-	display: inline-block;
+	padding: auto;
   }
   
   nav ul {
 	list-style-type: none;
-	display: flex;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
+	display: inline-flex;
+	justify-content: space-around;
   }
   
   nav ul li {
-	margin-right: 10px;
-	position: relative;
-	border-radius: auto;
+	display: inline-flex;
   }
   
   nav ul li a {
-	color: rgb(8, 8, 8);
-	font-family:'Holtwood One SC';
-	font-size: 22px;
-	padding: 25px;
-	transition: all 0.3s ease;
-	margin-right: 10px;
-  }
-  
-  nav ul li a:hover {
-	background-color: rgba(24, 212, 49, 0.2);
-	border-radius: 5px;
-  }
-  
-  nav ul li ul {
-	position: absolute;
-	top: 100%;
-	background-color: whitesmoke;
-	left: 0;
-	display: none;
-	padding: 0;
-	margin: 0;
-	border-radius: 5px;
-  }
-  
-  nav ul li:hover > ul {
-	display: block;
-  }
-  
-  nav ul li ul li {
-	display: block;
-	margin: 0;
-  }
-  
-  nav ul li ul li a {
-	font-size: 16px;
+	color: rgb(0, 0, 0);
+	font-family: 'Holtwood One SC';
+	font-size: 25px;
   }
   
   .banner {
-	padding: 10px;
+	padding: 100px;
 	text-align: center;
-	display: flex;
+	display: inline-flex;
 	background-color: rgba(195, 223, 165, 0.568);
   }
   
@@ -198,11 +148,10 @@
 	color: rgb(236, 233, 233);
 	text-align: center;
 	font-family: cursive;
-	padding: 2px;
-	margin-top: auto;
+  padding: 2px;
   }
-
-.button {
+  
+  .button {
 	display: inline-block;
 	background-color: #333;
 	font-family: cursive;
@@ -210,19 +159,49 @@
 	padding: 10px 20px;
 	text-decoration: none;
 	border-radius: 5px;
-}
-
-button {
+  }
+  
+  button {
 	padding: 10px 20px;
 	background-color: #4CAF50;
+	align-items: center;
+	justify-content: center;
 	color: white;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
+  }
+  
+  nav ul {
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav ul li {
+	display: inline-block;
+	position: relative;
+  }
+  
+  nav ul li a {
+	display: block;
+	text-decoration: none;
+  }
+  
+  nav ul li ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	background-color: whitesmoke;
+	left: 0;
+  }
+  
+  nav ul li:hover > ul {
+	display: block;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
 	/* Adjust styles for mobile devices */
   
 	.container {
@@ -236,11 +215,12 @@ button {
 	}
   
 	nav ul {
-	  justify-content: center;
+	  justify-content: left;
 	}
   
 	nav ul li {
-	  display: inline;
+	  display: inline-block;
+	  margin-bottom: 10px;
 	}
   
 	label {
@@ -285,26 +265,7 @@ button {
 	}
   
 	.banner {
-	  padding: 20px;
-	  margin: 0;
-	  flex-direction: column;
-	  align-items: center;
-	  text-align: center;
-	  display: flex;
-	}
-
-	.banner h1 {
-		font-size: 35px;
-	}
-
-	.banner h3 {
-		font-size: 15px;
-		text-align: justify;
-	}
-	
-	.banner p {
-		font-size: 15px;
-		margin: 5px;
+	  padding: 50px;
 	}
   
 	#about {
@@ -312,32 +273,36 @@ button {
 	}
   
 	nav {
+	  padding: 10px;
 	  text-align: justify;
+	  text-align-last: auto;
 	}
   
 	nav ul {
 	  display: block;
-	  margin: 0;
+	  margin: 10px;
 	  padding: 0;
 	}
   
 	nav ul li {
-	  display: inline;
-	  margin-bottom: 0;
-	  text-align: justify;
+	  display: inline-block;
+	  margin-bottom: 10px;
 	}
   
 	nav ul li a {
 	  display: inline-block;
 	  text-align: justify;
+	  text-align-last: auto;
 	  font-size: 22px;
 	}
   
 	nav ul li ul {
+	  position: static;
 	  background-color: transparent;
+	  text-align-last: auto;
 	}
   
 	nav ul li:focus > ul {
 	  display: block;
 	}
-  }
+  }  
