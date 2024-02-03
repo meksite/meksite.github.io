@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <title>Receipt Generator</title>
+</head>
+<body>
+    <div class="receipt-container">
+        <h1>MEK Receipt Generator</h1>
+        <form id="receiptForm">
+            <label for="receiptNumber">Receipt Number:</label>
+            <input type="text" id="receiptNumber" readonly>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="amount">Amount (₹):</label>
+            <input type="number" id="amount" required>
+
+            <label for="receivedBy">Received By:</label>
+            <input type="text" id="receivedBy" required>
+
+            <label for="signature">Signature:</label>
+            <input type="text" id="signature" required>
+
+            <button type="button" onclick="generateReceipt()">Generate Receipt</button> <br>
+            <button type="button" onclick="resetReceiptCounter()">Reset</button>
+        </form>
+
+        <div id="generatedReceipt"></div>
+        <button id="downloadButton" onclick="downloadReceipt()">Download Receipt</button>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
